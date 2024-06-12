@@ -1,0 +1,85 @@
+package com.app.pen;
+
+import java.time.LocalDate;
+
+public class Pen {
+	
+	private static int id;
+	private String brandName;
+	private String colorName;
+	private String inkColor;
+	private String material;
+	private int avilableQuentity;
+	private LocalDate updateDate;
+	private LocalDate stockListingDate;
+	private Float price;
+	private float discount;
+	
+	
+	
+	
+	
+	
+	public Pen(String brandName, String colorName, String inkColor, String material, int avilableQuentity,
+			LocalDate updateDate, LocalDate stockListingDate, Float price) {
+		super();
+		this.brandName = brandName;
+		this.colorName = colorName;
+		this.inkColor = inkColor;
+		this.material = material;
+		this.avilableQuentity = avilableQuentity;
+		this.updateDate = updateDate;
+		this.stockListingDate = stockListingDate;
+		this.price = price;
+		this.discount=0;
+	}
+	public static int getId() {
+		return id;
+	}
+	public String getBrandName() {
+		return brandName;
+	}
+	public String getColorName() {
+		return colorName;
+	}
+	public String getInkColor() {
+		return inkColor;
+	}
+	public String getMaterial() {
+		return material;
+	}
+	public int getAvilableQuentity() {
+		return avilableQuentity;
+	}
+	public LocalDate getUpdateDate() {
+		return updateDate;
+	}
+	public LocalDate getStockListingDate() {
+		return stockListingDate;
+	}
+	public Float getPrice() {
+		return price;
+	}
+	public float getDiscount() {
+		return discount;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Pen [brandName=" + brandName + ", colorName=" + colorName + ", inkColor=" + inkColor + ", material="
+				+ material + ", avilableQuentity=" + avilableQuentity + ", updateDate=" + updateDate
+				+ ", stockListingDate=" + stockListingDate + ", price=" + price + ", discount=" + discount + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

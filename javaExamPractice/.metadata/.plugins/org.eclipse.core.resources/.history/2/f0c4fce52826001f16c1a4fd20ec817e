@@ -1,0 +1,53 @@
+package com.app.tester;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.app.core.Cricketer;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		List<Cricketer> cricketerList = new ArrayList<Cricketer>();
+		
+
+				
+		try(Scanner sc = new Scanner (System.in)){
+		    int choice;
+			System.out.println("************ Welcome ************");
+			System.out.println("1.Add Cricketer in the collection.");
+			System.out.println("2.Modify Cricketer's rating");
+			System.out.println("3.Search Cricketer by name");
+			System.out.println("4. Display all Cricketers added in collection.");
+			System.out.println("5.Display All Cricketers in sorted form by rating.");
+			System.out.println("6. To Exit Program");
+			choice = sc.nextInt();
+			
+			switch (choice) {
+			case 1:
+				
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+
+			default:
+				System.out.println("Enter a valid input");
+				break;
+			}
+			
+			
+			
+		}
+
+	}
+
+}

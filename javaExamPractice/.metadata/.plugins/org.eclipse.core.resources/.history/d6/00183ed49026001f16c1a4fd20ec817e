@@ -1,0 +1,16 @@
+package com.app.emp_operation;
+
+import java.util.List;
+
+import com.app.core.Employee;
+
+public class Emp_Operation {
+
+	public static void addFTE(Employee e,List<Employee>elist) {
+		elist.add(e);
+		System.out.println(elist);
+		
+		
+	}
+
+}

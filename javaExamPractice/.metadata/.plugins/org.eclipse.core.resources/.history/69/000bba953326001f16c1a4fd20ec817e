@@ -1,0 +1,67 @@
+package com.app.utils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.app.core.Cricketer;
+
+public class CricketerUtils {
+	List<Cricketer> cricketerList = new ArrayList<Cricketer>();
+	
+	public void addCricketer(Cricketer c) {
+		cricketerList.add(c);
+		System.out.println("Cricketer Entery Done Succesfully");
+		//System.out.println(cricketerList);
+		System.out.println(cricketerList);
+	}
+	
+	
+	//to update Rating
+	public void changeRating(String email,int rating) {
+		for(Cricketer c : cricketerList) {
+			if(c.getEmail_id().equals(email)){
+				c.setRating(rating);
+				System.out.println("Rating updated sucessfully and updated Rating is : " + c.getRating());
+			}
+		}
+	}
+	
+	public void searchCricketerByName(String name) {
+		for(Cricketer c : cricketerList) {
+			if(c.getName().equalsIgnoreCase(name)) {
+				System.out.println(c.toString());
+			
+			}
+			
+		}
+		
+	}
+	
+	public void displayPlayerList() {
+		System.out.println(cricketerList);
+		
+	}
+
+
+	public void displayPlayerList1() {
+		for(Cricketer c : cricketerList)
+		System.out.println(c);
+		
+	}
+
+
+	public void searchCricketerByName1(String name) {
+		for(Cricketer c : cricketerList) {
+			if(c.getName().equalsIgnoreCase(name)) {
+				System.out.println(c.toString());
+			
+			}
+			
+		}
+		
+		
+	}
+	
+	
+
+}

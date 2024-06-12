@@ -1,0 +1,25 @@
+package com.app.util;
+
+import java.time.LocalDate;
+
+import javax.swing.SwingWorker.StateValue;
+
+import com.app.pen.Brand;
+import com.app.pen.Material;
+import com.app.pen.Pen;
+
+public class Operation extends Pen {
+	
+	//Pen(int id,Brand brandName, String colorName, String inkColor, Material material, 
+	//int avilableQuentity,LocalDate updateDate, LocalDate stockListingDate, Float price)
+	
+	public static void addPen(int id,Brand brandName, String colorName, String inkColor, Material material, int avilableQuentity,
+			LocalDate updateDate, LocalDate stockListingDate, Float price){
+		Brand brand = Brand.valueOf(brandName.toUpperCase());
+		
+		
+		
+		
+	}
+
+}

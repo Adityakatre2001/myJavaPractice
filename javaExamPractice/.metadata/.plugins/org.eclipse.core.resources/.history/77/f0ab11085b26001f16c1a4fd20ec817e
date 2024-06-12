@@ -1,0 +1,15 @@
+package com.app.Utility;
+
+import java.util.List;
+
+import com.app.core.Serialization;
+
+public class Serialization_Operation {
+	
+	
+	public void addItem(Serialization s,List<Serialization>sList) {
+		sList.add(s);
+		System.out.println(sList.toString());
+	}
+
+}

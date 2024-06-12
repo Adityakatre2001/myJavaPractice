@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+E:\javaExamPractice\.metadata\.plugins\org.eclipse.jdt.core
+1412431613.index
+4147551711.index
+2565356412.index
+1865797976.index
+1782182505.index
+2517824065.index
+342922669.index

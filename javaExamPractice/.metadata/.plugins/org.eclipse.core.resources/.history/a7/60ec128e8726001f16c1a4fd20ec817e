@@ -1,0 +1,42 @@
+package com.app.tester;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.app.core.Employee;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		List<Employee>empList=new ArrayList<Employee>();
+		try(Scanner sc = new Scanner(System.in)){
+			String ch="";
+			int choice;
+			do {
+				System.out.println("************ Welcome ***********");
+				System.out.println("1. Add full time employee");
+				System.out.println("2. Add part time employee");
+				System.out.println("3. Delete an employee by Emp Id");
+				System.out.println("4. Search employee details by Aadhaar number");
+				System.out.println("5. Display all employee details");
+				System.out.println("6. Display all employee details sorted by date of joining");
+				System.out.println("7. Exit");
+				System.out.print("Enter Your Choice : ");
+				choice=sc.nextInt();
+				switch (choice) {
+				case 1:
+					
+					break;
+
+				default:
+					break;
+				}
+								
+			} while (choice!=7);
+			
+		}
+
+	}
+
+}

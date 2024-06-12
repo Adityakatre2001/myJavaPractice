@@ -1,0 +1,8 @@
+package com.app.core;
+
+public enum EmpType {
+	FULL_TIME_EMPLOYEE,PART_TIME_EMPLOYEE;
+	
+	
+
+}

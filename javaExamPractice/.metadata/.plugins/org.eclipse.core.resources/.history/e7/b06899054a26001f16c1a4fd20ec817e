@@ -1,0 +1,79 @@
+package com.app.tester;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.app.core.Cricketer;
+import com.app.utils.CricketerUtils;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+	
+		try(Scanner sc = new Scanner (System.in)){
+			List<Cricketer> cricketerList = new ArrayList<Cricketer>(); 
+		    int choice;
+		    String ch ="";
+		    do {
+		    CricketerUtils ck = new CricketerUtils();
+			System.out.println("************ Welcome ************");
+			System.out.println("1.Add Cricketer in the collection.");
+			System.out.println("2.Modify Cricketer's rating");
+			System.out.println("3.Search Cricketer by name");
+			System.out.println("4. Display all Cricketers added in collection.");
+			System.out.println("5.Display All Cricketers in sorted form by rating.");
+			System.out.println("6. To Exit Program");
+			System.out.print("Enter Your Choice : ");
+			choice = sc.nextInt();
+			
+			switch (choice) {
+			case 1:
+				System.out.println("Enter name, age, email_id, phone, rating(0 to 5)");
+				Cricketer c = new Cricketer (sc.next(),sc.nextInt(),sc.next(),sc.next(),sc.nextInt());
+				ck.addCricketer(c,cricketerList);
+				//addCricketer(c);
+				System.out.println("You are Done");
+				break;
+			case 2:
+				System.out.println("Enter Email_id And Rating To update");
+				@SuppressWarnings("unused") List<Cricketer> c2 = ck.changeRating(sc.next(),sc.nextInt(),cricketerList);
+				System.out.println(c2);
+				System.out.println("Rating Updated Succesfully");
+				
+				
+				break;
+			case 3:
+				System.out.println("Enter name of Cricketer to search");
+				//List<Cricketer> c3 = 
+				ck.searchCricketerByName(sc.next(),cricketerList);
+				//System.out.println(c3);
+				
+				break;
+			case 4:
+				ck.displayPlayerList(cricketerList);
+				break;
+			case 5:
+				List<Cricketer> c5 = ck.sortByRating(cricketerList);
+				System.out.println(c5);
+				
+				break;
+			case 6:
+				choice=0;
+				break;
+
+			default:
+				System.out.println("Enter a valid input");
+				break;
+			}
+			
+			
+		  System.out.println("Enter Y to Repeat");
+		  ch = sc.next();		
+		  }while(ch.equalsIgnoreCase(ch));
+	}
+		} 
+
+	}
+
+

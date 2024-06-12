@@ -1,0 +1,29 @@
+package com.app.utils;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.app.core.Cricketer;
+
+public class CricketerUtils {
+	static List<Cricketer> cricketerList = new ArrayList<Cricketer>();
+	
+	public void addCricketer(Cricketer c) {
+		cricketerList.add(c);
+		System.out.println("Cricketer Entery Done Succesfully");
+	}
+	
+	
+	//to update Rating
+	public static void changeRating(String email,int rating) {
+		for(Cricketer c : cricketerList) {
+			if(c.getEmail_id().equals(email)){
+				c.setRating(rating);
+				System.out.println("Rating updated sucessfully and updated Rating is : " + c.getRating());
+			}
+		}
+	}
+	
+	
+
+}

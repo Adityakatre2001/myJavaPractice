@@ -1,0 +1,10 @@
+package com.app.emp_operation;
+
+public class Emp_Operation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
